@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    {% if buy %}
+    <div class="alert alert-success">
+      <strong>{{ buy }}</strong>
+    </div>
+    {% endif %}
+    {% if sell %}
+    <div class="alert alert-success">
+      <strong>{{ sell }}</strong>
+    </div>
+    {% endif %}
+    <table class="table table-striped table-hover">
+      <tr>
+        <th>Symbol</th>
+        <th>Name</th>
+        <th>Shares</th>
+        <th>Price</th>
+        <th>TOTAL</th>
+      </tr>
+      {% for stock in stocksOwned %}
+      <tr>
+          <td>{{ stock['symbol'] }}</td>
+          <td>{{ stock['name'] }}</td>
+          <td>{{ stock['qty'] }}</td>
+          <td>{{ stock['price'] }}</td>
+          <td>{{ stock['total'] }}</td>
+      </tr>
+      {% endfor %}
+      <tr>
+        <td>CASH</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td>{{ cash }}</td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <th>{{ portfolioValue }}</th>
+      </tr>
+    </table>
+{% endblock %}
