@@ -13,20 +13,20 @@ With this platform, the user can simulate live trading using virtual currency. T
 
 ## Instructions
 
-An account from IEX is needed for this application to run. Head over to iexcloud.io/cloud-login#/register/ to sign up for a free account.
+An account from IEX is needed for this application to run. Head over to [iexcloud.io/cloud-login#/register/](iexcloud.io/cloud-login#/register/) to sign up for a free account.
 
-Once an account is created, head over to iexcloud.io to generate an API token.
+Once an account is created, head over to [iexcloud.io](iexcloud.io) to generate an API token.
 
 With the token, execute 
 
-'''
+```
 export API_KEY=value
-'''
+```
 
 where value is the API token generated.
 
 Start the application with 
 
-'''
+```
 flask run
-'''
+```
