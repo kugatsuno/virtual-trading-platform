@@ -3,7 +3,8 @@
 ## About
 
 This is a personal project intended to mimic the functions of a virtual live trading platform. 
-Languages and frameworks utilised in this project: PYTHON, JAVASCRIPT, CSS, HTML, FLASK, JINJA, SQL
+
+Built in Python, Javascript, HTML and CSS, using Flask and Jinja
 
 Stocks data provided for free by IEX. 
 
